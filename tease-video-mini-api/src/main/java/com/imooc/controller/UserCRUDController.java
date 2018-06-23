@@ -8,6 +8,9 @@ import com.imooc.pojo.Users;
 import com.imooc.service.crud.UserCRUDService;
 import com.imooc.utils.IMoocJSONResult;
 
+/**
+ * 用户的增删改查
+ */
 @RestController
 @RequestMapping("/crud")
 public class UserCRUDController {
