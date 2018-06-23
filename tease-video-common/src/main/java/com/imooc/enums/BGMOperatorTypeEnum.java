@@ -1,5 +1,8 @@
 package com.imooc.enums;
 
+/**
+ * 枚举 背景音乐操作类型
+ */
 public enum BGMOperatorTypeEnum {
 	
 	ADD("1", "添加bgm"),				

@@ -1,5 +1,8 @@
 package com.imooc.enums;
 
+/**
+ * 枚举 视频状态
+ */
 public enum VideoStatusEnum {
 	
 	SUCCESS(1),		// 发布成功

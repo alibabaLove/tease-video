@@ -14,9 +14,12 @@ public class FetchVideoCover {
 	// 视频路径
 	private String ffmpegEXE;
 
+	/**
+	 * 视频转化为封面图
+	 */
 	public void getCover(String videoInputPath, String coverOutputPath) throws IOException, InterruptedException {
 //		ffmpeg.exe -ss 00:00:01 -i spring.mp4 -vframes 1 bb.jpg
-		List<String> command = new java.util.ArrayList<String>();
+		List<String> command = new java.util.ArrayList<>();
 		command.add(ffmpegEXE);
 		
 		// 指定截取第1秒
@@ -72,16 +75,5 @@ public class FetchVideoCover {
 
 	public FetchVideoCover(String ffmpegEXE) {
 		this.ffmpegEXE = ffmpegEXE;
-	}
-	
-	public static void main(String[] args) {
-		// 获取视频信息。
-		FetchVideoCover videoInfo = new FetchVideoCover("c:\\ffmpeg\\bin\\ffmpeg.exe");
-		try {
-			videoInfo.getCover("c:\\北京北京.avi","c:\\北京.jpg");
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 }

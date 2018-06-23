@@ -3,6 +3,9 @@ package com.imooc.utils;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * 时间
+ */
 public class TimeAgoUtils {
 
 	private static final long ONE_MINUTE = 60000L;
