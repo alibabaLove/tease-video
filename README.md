@@ -34,7 +34,6 @@ ffmpeg简介:
            $ ffmpeg.exe -i input.mp4 output.avi
          linux:
            $ ffmpeg -i input.mp4 output.avi
-     
      2.2>.java调用
        释放内存碎片 
      注意:视频和音频结合
@@ -43,7 +42,17 @@ ffmpeg简介:
         windows:
             https://blog.csdn.net/chy466071353/article/details/54949221       
         linux:
-   
+            yum install
+            https://www.cnblogs.com/wpjamer/p/ffmpeg.html
+            #1.安装Nux Dextop Yum 源
+            rpm --import http://li.nux.ro/download/nux/RPM-GPG-KEY-nux.ro
+            wget https://mirrors.tuna.tsinghua.edu.cn/epel//7/x86_64/e/epel-release-7-9.noarch.rpm
+            yum -y localinstall nux-dextop-release-0-5.el7.nux.noarch.rpm
+            #2.安装FFmpeg 和 FFmpeg开发包
+            yum install ffmpeg ffmpeg-devel -y
+            #3.测试是否安装成功
+            ffmpeg
+            ffmpeg -h
    腾讯云SpingBoot部署+HTTPS
     https://www.imooc.com/article/25673
 
