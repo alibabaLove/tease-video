@@ -5,6 +5,50 @@ java仿抖音短视频
 
 访问:http://localhost:8081/hello
 
+技术：
+ 1.SSM
+ 2.SpringBoot
+ 3.redis
+ 4.zookeeper&zk curator
+    用于分布式云服务器之间的bgm自动下载，当客户在后台管理系统上传或者删除某个bgm后，会通知另外一台服务器去自动下载或删除
+ 5.mysql
+ 6.ffmpeg   
+    视音频处理工具，比如视频合并，视频截取封面
+ 7.idworker 分布式id生成器
+ 8.swagger2  接口文档
+ 
+ffmpeg简介:
+    文件上传
+    @POSTMapping(value="upload",headers="content-type=multipart/form-data")
+   
+   1.介绍:视音频处理工具，跨平台
+     主页:http://ffmpeg.org
+     应用场景:
+       1.播放器:暴风影音 
+       2.转码工具:格式工厂,剪辑工具
+       3.直播、视频加码、滤镜、水印、特效
+     
+   2.视频转换(有损)
+     2.1>.命令行:
+         windows:
+           $ ffmpeg.exe -i input.mp4 output.avi
+         linux:
+           $ ffmpeg -i input.mp4 output.avi
+     
+     2.2>.java调用
+       释放内存碎片 
+     注意:视频和音频结合
+          视频和音频不同时,以视频的长度为主
+     2.3>.安装：
+        windows:
+            https://blog.csdn.net/chy466071353/article/details/54949221       
+        linux:
+   
+   腾讯云SpingBoot部署+HTTPS
+    https://www.imooc.com/article/25673
+
+产品原型图:
+    https://www.xiaopiu.com/h5/byId?type=project&id=59f1cce4e7485455c20eb9a8            
 逗音待实现的功能：
  1.登录:
   先调用小程序的登录,如果wx_opentId不存在,则注册时(使用默认的头像、逗音号)
