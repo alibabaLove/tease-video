@@ -4,7 +4,7 @@ java仿抖音短视频
 名称:逗音
 
 访问:http://localhost:8081/hello
-
+GitHub:https://github.com/alibabaLove/tease-video
 技术：
  1.SSM
  2.SpringBoot
